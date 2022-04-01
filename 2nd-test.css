@@ -1,0 +1,870 @@
+:root {
+  /* fonts */
+  --main-font: 'Cookie', cursive;
+  --secondry-font: 'Dancing Script', cursive;
+  --thrid-font: 'Ubuntu', sans-serif;
+  /* colors */
+  --main-color: #9fd0c1;
+  --buttons-color: #99cabe;
+  --other-color: #a4dbc7;
+}
+
+body {
+  margin: 0;
+  padding: 1% 5%;
+  /* background: var(--main-color); */
+}
+
+.navi {
+  padding-bottom: 3%;
+  /* border: 1px blue solid; */
+  position: relative;
+  box-sizing: border-box;
+}
+
+.navi h1 {
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 3rem;
+  color: #3d3d3e;
+  margin-bottom: 0;
+}
+
+.navi h3 {
+  font-family: var(--thrid-font);
+  font-weight: lighter;
+  font-size: .70rem;
+  color: #3d3d3e;
+  margin-top: -10px;
+}
+
+.navi .buttons {
+  position: absolute;
+  bottom: 55px;
+  right: 0;
+  box-sizing: border-box;
+  text-align: center;
+  /* border: 1px green solid; */
+}
+
+.navi .buttons .home, .contact, .Services, .blog {
+  text-decoration: none;
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+  padding: 4px;
+  color: #415951;
+  font-family: var(--thrid-font);
+  font-size: 1.15rem;
+  transition: all 1.5s linear;
+}
+
+.buttons .home:hover {
+  text-decoration: none;
+  border: 2px solid red;
+  box-sizing: border-box;
+  padding: 4px;
+  color: white;
+  background: black;
+  font-family: var(--thrid-font);
+  font-size: 1.15rem;
+}
+
+.contact:hover {
+  text-decoration: none;
+  border: 2px solid red;
+  box-sizing: border-box;
+  padding: 4px;
+  color: white;
+  background: black;
+  font-family: var(--thrid-font);
+  font-size: 1.15rem;
+}
+
+.blog:hover {
+  text-decoration: none;
+  border: 2px solid red;
+  box-sizing: border-box;
+  padding: 4px;
+  color: white;
+  background: black;
+  font-family: var(--thrid-font);
+  font-size: 1.15rem;
+}
+
+.Services:hover {
+  text-decoration: none;
+  border: 2px solid red;
+  box-sizing: border-box;
+  padding: 4px;
+  color: white;
+  background: black;
+  font-family: var(--thrid-font);
+  font-size: 1.15rem;
+}
+
+.navi .phone {
+  position: absolute;
+  right: 0;
+  top: -10px;
+  box-sizing: border-box;
+  padding-bottom: 50px;
+  /* border: 1px red solid; */
+}
+
+.phone {
+  font-size: 25px;
+  height: 5px;
+  color: rgba(255, 0, 80, 0.7);
+  /* background: linear-gradient(yellow,red);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent; */
+}
+
+/* header images */
+.img-text {
+  /* border: 1px blue solid; */
+  position: relative;
+}
+
+.all-images {
+  width: 650px;
+  height: 400px;
+  /* border: 1px red solid; */
+  box-sizing: border-box;
+  padding: 2%;
+  position: relative;
+  margin-left: 48.2%;
+}
+
+.all-images .flame, .all-images .running, .all-images .stoves {
+  width: 300px;
+  height: 225px;
+}
+
+.all-images .flame img, .all-images .running img, .all-images .stoves img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.all-images .flame {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.all-images .stoves {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.all-images .running {
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+}
+
+.img-text .text {
+  /* border: 1px green solid; */
+  box-sizing: border-box;
+  padding: 2% 2% 2% 0;
+  line-height: 25px;
+  color: grey;
+  width: 550px;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 20px;
+  /* background: var(--other-color); */
+}
+
+.text h2 {
+  color: #444d46;
+}
+
+ul {
+  margin-left: -5%;
+}
+
+ul a {
+  text-decoration: none;
+  color: grey;
+}
+
+/* footer icons */
+/* #footer {
+  margin-top: 3%;
+  padding: 3% 0;
+  border-radius: 20px;
+  margin-left: -.5%;
+  background: var(--other-color);
+}
+
+.footer-icons {
+  color: grey;
+  padding: .5%;
+  margin-top: 25px;
+  text-decoration: none;
+ }  */
+.footer-icons {
+  color: grey;
+  text-decoration: none;
+  padding: .3%;
+}
+
+/* 1200px width */
+@media (max-width:1200px) {
+  body {
+    /* background-color: red; */
+    margin: 0;
+    padding: 3% 5%;
+    /* background: var(--main-color); */
+  }
+
+  .navi {
+    padding-bottom: 3%;
+    /* border: 1px blue solid; */
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .navi h1 {
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color: #3d3d3e;
+    margin-bottom: 0;
+  }
+
+  .navi h3 {
+    font-family: var(--thrid-font);
+    font-weight: normal;
+    font-size: .58rem;
+    color: #3d3d3e;
+    margin-top: -10px;
+  }
+
+  .navi .buttons {
+    position: absolute;
+    bottom: 55px;
+    right: 0;
+    box-sizing: border-box;
+    text-align: center;
+    /* border: 1px green solid; */
+  }
+
+  .navi .buttons .home, .contact, .Services, .blog {
+    text-decoration: none;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 4px;
+    color: #415951;
+    font-family: var(--thrid-font);
+    font-size: .90rem;
+    transition: all .7s linear;
+    z-index: 1;
+    margin-left: 5px;
+  }
+
+  .buttons .home:hover {
+    text-decoration: none;
+    border: 2px solid red;
+    box-sizing: border-box;
+    padding: 4px;
+    color: white;
+    background: black;
+    font-family: var(--thrid-font);
+    font-size: .90rem;
+  }
+
+  .contact:hover {
+    text-decoration: none;
+    border: 2px solid red;
+    box-sizing: border-box;
+    padding: 4px;
+    color: white;
+    background: black;
+    font-family: var(--thrid-font);
+    font-size: .9rem;
+  }
+
+  .blog:hover {
+    text-decoration: none;
+    border: 2px solid red;
+    box-sizing: border-box;
+    padding: 4px;
+    color: white;
+    background: black;
+    font-family: var(--thrid-font);
+    font-size: .9rem;
+  }
+
+  .Services:hover {
+    text-decoration: none;
+    border: 2px solid red;
+    box-sizing: border-box;
+    padding: 4px;
+    color: white;
+    background: black;
+    font-family: var(--thrid-font);
+    font-size: .9rem;
+  }
+
+  .navi .phone {
+    position: absolute;
+    right: 0;
+    top: -25px;
+    box-sizing: border-box;
+    padding-bottom: 10%;
+    z-index: -1;
+  }
+
+  .phone {
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgba(255, 0, 80, 0.7);
+    /* background: linear-gradient(yellow,red);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent; */
+  }
+
+  /* header images */
+  .img-text {
+    /* border: 1px blue solid; */
+    position: relative;
+  }
+
+  .all-images {
+    width: 555px;
+    height: 350px;
+    /* border: 1px red solid; */
+    box-sizing: border-box;
+    padding: 2%;
+    position: relative;
+    margin-left: 48.2%;
+  }
+
+  .all-images .flame, .all-images .running, .all-images .stoves {
+    width: 250px;
+    height: 200px;
+  }
+
+  .all-images .flame img, .all-images .running img, .all-images .stoves img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+
+  .all-images .flame {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .all-images .stoves {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .all-images .running {
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+  }
+
+  .img-text .text {
+    /* border: 1px green solid; */
+    box-sizing: border-box;
+    padding: 2% 2% 2% 0;
+    line-height: 24px;
+    color: grey;
+    width: 450px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    /* background: var(--other-color); */
+  }
+
+  .text h2 {
+    color: #444d46;
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  ul {
+    margin-left: -5%;
+  }
+
+  ul a {
+    text-decoration: none;
+    color: grey;
+  }
+
+  /* footer icons */
+  /* #footer {
+    margin-top: 3%;
+    padding: 3% 0;
+    border-radius: 20px;
+    margin-left: -.5%;
+    background: var(--other-color);
+  }
+
+  .footer-icons {
+    color: grey;
+    padding: .5%;
+    margin-top: 25px;
+    text-decoration: none;
+   }  */
+  .footer-icons {
+    color: rgba(12, 100, 90, 0.5);
+    text-decoration: none;
+    padding: .3%;
+  }
+}
+
+/* 1100px width */
+@media (max-width:1100px) {
+  body {
+    /* background-color: red; */
+    margin: 0;
+    padding: 3% 4%;
+    /* background: var(--main-color); */
+  }
+
+  .navi {
+    padding-bottom: 3%;
+    /* border: 1px blue solid; */
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .navi h1 {
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+    color: #3d3d3e;
+    margin-bottom: 0;
+  }
+
+  .navi h3 {
+    font-family: var(--thrid-font);
+    font-weight: normal;
+    font-size: .55rem;
+    color: #3d3d3e;
+    margin-top: -10px;
+  }
+
+  .navi .buttons {
+    position: absolute;
+    bottom: 55px;
+    right: 0;
+    box-sizing: border-box;
+    text-align: center;
+    /* border: 1px green solid; */
+  }
+
+  .navi .buttons .home, .contact, .Services, .blog {
+    text-decoration: none;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 4px;
+    color: #415951;
+    font-family: var(--thrid-font);
+    font-size: .90rem;
+    transition: all .7s linear;
+    z-index: 1;
+    margin-left: 5px;
+  }
+
+  .buttons .home:hover {
+    text-decoration: none;
+    border: 2px solid red;
+    box-sizing: border-box;
+    padding: 4px;
+    color: white;
+    background: black;
+    font-family: var(--thrid-font);
+    font-size: .90rem;
+  }
+
+  .contact:hover {
+    text-decoration: none;
+    border: 2px solid red;
+    box-sizing: border-box;
+    padding: 4px;
+    color: white;
+    background: black;
+    font-family: var(--thrid-font);
+    font-size: .9rem;
+  }
+
+  .blog:hover {
+    text-decoration: none;
+    border: 2px solid red;
+    box-sizing: border-box;
+    padding: 4px;
+    color: white;
+    background: black;
+    font-family: var(--thrid-font);
+    font-size: .9rem;
+  }
+
+  .Services:hover {
+    text-decoration: none;
+    border: 2px solid red;
+    box-sizing: border-box;
+    padding: 4px;
+    color: white;
+    background: black;
+    font-family: var(--thrid-font);
+    font-size: .9rem;
+  }
+
+  .navi .phone {
+    position: absolute;
+    right: 0;
+    top: -25px;
+    box-sizing: border-box;
+    padding-bottom: 10%;
+    z-index: -1;
+  }
+
+  .phone {
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgba(255, 0, 80, 0.7);
+    /* background: linear-gradient(yellow,red);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent; */
+  }
+
+  /* header images */
+  .img-text {
+    /* border: 1px blue solid; */
+    position: relative;
+  }
+
+  .all-images {
+    width: 520px;
+    height: 350px;
+    /* border: 1px red solid; */
+    box-sizing: border-box;
+    padding: 2%;
+    position: relative;
+    margin-left: 48.2%;
+  }
+
+  .all-images .flame, .all-images .running, .all-images .stoves {
+    width: 250px;
+    height: 200px;
+  }
+
+  .all-images .flame img, .all-images .running img, .all-images .stoves img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+
+  .all-images .flame {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .all-images .stoves {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .all-images .running {
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+  }
+
+  .img-text .text {
+    /* border: 1px green solid; */
+    box-sizing: border-box;
+    padding: 2% 2% 2% 0;
+    line-height: 24px;
+    color: grey;
+    width: 450px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    /* background: var(--other-color); */
+  }
+
+  .text h2 {
+    color:#444d46;
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  ul {
+    margin-left: -5%;
+  }
+
+  ul a {
+    text-decoration: none;
+    color: grey;
+  }
+
+  /* footer icons */
+  /* #footer {
+    margin-top: 3%;
+    padding: 3% 0;
+    border-radius: 20px;
+    margin-left: -.5%;
+    background: var(--other-color);
+  }
+
+  .footer-icons {
+    color: grey;
+    padding: .5%;
+    margin-top: 25px;
+    text-decoration: none;
+   }  */
+  .footer-icons {
+    color: rgba(12, 100, 90, 0.5);
+    text-decoration: none;
+    padding: .3%;
+  }
+}
+
+/* 1024px width */
+@media (max-width:1024px) {
+  body {
+    /* background-color: red; */
+    margin: 0;
+    padding: 3% 4%;
+    /* background: var(--main-color); */
+  }
+
+  .navi {
+    padding-bottom: 3%;
+    /* border: 1px blue solid; */
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .navi h1 {
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 2.29rem;
+    letter-spacing: 1px;
+    color: #3d3d3e;
+    margin-bottom: 0;
+  }
+
+  .navi h3 {
+    font-family: var(--thrid-font);
+    font-weight: normal;
+    font-size: .52rem;
+    color: #3d3d3e;
+    margin-top: -10px;
+  }
+
+  .navi .buttons {
+    position: absolute;
+    bottom: 55px;
+    right: 0;
+    box-sizing: border-box;
+    text-align: center;
+    /* border: 1px green solid; */
+  }
+
+  .navi .buttons .home, .contact, .Services, .blog {
+    text-decoration: none;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 4px;
+    color: #415951;
+    font-family: var(--thrid-font);
+    font-size: .90rem;
+    transition: all .7s linear;
+    z-index: 1;
+    margin-left: 5px;
+  }
+
+  .buttons .home:hover {
+    text-decoration: none;
+    border: 2px solid red;
+    box-sizing: border-box;
+    padding: 4px;
+    color: white;
+    background: black;
+    font-family: var(--thrid-font);
+    font-size: .90rem;
+  }
+
+  .contact:hover {
+    text-decoration: none;
+    border: 2px solid red;
+    box-sizing: border-box;
+    padding: 4px;
+    color: white;
+    background: black;
+    font-family: var(--thrid-font);
+    font-size: .9rem;
+  }
+
+  .blog:hover {
+    text-decoration: none;
+    border: 2px solid red;
+    box-sizing: border-box;
+    padding: 4px;
+    color: white;
+    background: black;
+    font-family: var(--thrid-font);
+    font-size: .9rem;
+  }
+
+  .Services:hover {
+    text-decoration: none;
+    border: 2px solid red;
+    box-sizing: border-box;
+    padding: 4px;
+    color: white;
+    background: black;
+    font-family: var(--thrid-font);
+    font-size: .9rem;
+  }
+  .navi .phone{
+    position: absolute;
+    right: 0;
+    top:  -25px;
+    box-sizing: border-box;
+    padding-bottom: 10%;
+
+    z-index: -1;
+  }
+
+  .phone {
+    font-size: 19px;
+    font-weight: bold;
+letter-spacing: 1px;
+    color: rgba(255, 0, 80, 0.7);
+
+    /* background: linear-gradient(yellow,red);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent; */
+  }
+  /* header images */
+  .img-text {
+    /* border: 1px blue solid; */
+    position: relative;
+  }
+
+  .all-images {
+    width: 500px;
+    height: 350px;
+    /* border: 1px red solid; */
+    box-sizing: border-box;
+    padding: 2%;
+    position: relative;
+    margin-left: 46.7%;
+  }
+
+  .all-images .flame, .all-images .running, .all-images .stoves {
+    width: 230px;
+    height: 190px;
+  }
+
+  .all-images .flame img, .all-images .running img, .all-images .stoves img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+
+  .all-images .flame {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .all-images .stoves {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .all-images .running {
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+  }
+
+  .img-text .text {
+    /* border: 1px green solid; */
+    box-sizing: border-box;
+    padding: 2% 2% 2% 0;
+    line-height: 24px;
+    color: grey;
+    width: 450px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    /* background: var(--other-color); */
+  }
+
+  .text h2 {
+    color: #444d46;
+    font-size: 30px;
+  }
+  p{
+    font-size: 14px;
+  }
+
+  ul {
+    margin-left: -5%;
+  }
+
+  ul a {
+    text-decoration: none;
+    color: grey;
+  }
+
+  /* footer icons */
+  /* #footer {
+    margin-top: 3%;
+    padding: 3% 0;
+    border-radius: 20px;
+    margin-left: -.5%;
+    background: var(--other-color);
+  }
+
+  .footer-icons {
+    color: grey;
+    padding: .5%;
+    margin-top: 25px;
+    text-decoration: none;
+   }  */
+
+  .footer-icons{
+    color: rgba(12, 100, 90, 0.5);
+    text-decoration: none;
+    padding: .3%;
+  }
+
+}
